@@ -68,7 +68,7 @@
                      <h2>hey!</h2>
                      <p>
                          I'm a freelance web developer based in Japan. I love making sites that do interesting things, from back to front. 
-                         I also ensure my sites adhere to best practices and have a bit of creative flair.
+                         I do my best to adhere to best practices and give my sites a bit of creative flair.
                      </p>
                      <p>I offer translation services for Japanese to English as well.</p>
                      <p>
@@ -95,8 +95,8 @@
                             <p>Guitar Compare TOKYO</p>
                              <button class="btn-1">info</button>
                              <div class="link-container">
-                                <a href=""><i class="fas fa-link fa-2x"></i></a>
-                                <a href=""><i class="fab fa-github fa-2x"></i></a>
+                                <a href="https://protected-bayou-15082.herokuapp.com/entries/" target="_blank"><i class="fas fa-link fa-2x"></i></a>
+                                <a href="https://github.com/thesaladbowl/guitarcompare" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                              </div>
                             </div>
                             <div id="modal-1" class="modal">
@@ -104,17 +104,34 @@
                                <div class="flex-wrapper">
                                 <div class="content-1">
                                   <h1>Guitar Compare TOKYO</h1>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nesciunt iure nemo quae ipsa corrupti, aliquid facilis consequatur repudiandae. Sed!</p>
-                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto atque maiores facilis voluptatum laudantium nam, nisi soluta! Eveniet quas deleniti fugit, ipsa recusandae tempore dolorem aliquam quisquam iusto iste dignissimos assumenda voluptatibus voluptatum atque voluptas suscipit quibusdam voluptates? Vel blanditiis maiores molestias facilis laudantium? Reiciendis dolor molestiae dignissimos incidunt!</p>
-                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat praesentium repellat nam enim, a est incidunt culpa, recusandae quam qui expedita labore deserunt, totam doloremque maxime itaque modi voluptates?</p>
+                                  <p>
+                                    One of the first sites I created as a hobby project to 
+                                    practice web scraping. The site scrapes several major guitar 
+                                    stores in Tokyo and allows the user to compare a range of 
+                                    guitars with ease. Users can sort by different brands and by 
+                                    price range as well. Once they find a guitar they are interested in,
+                                     they can access a link to the product page directly. I intended to 
+                                     have the products updated daily using an asynchronous worker 
+                                     (such as Celery), but have yet to implement it. Nonetheless, 
+                                     it was a great project to practice using an unfamiliar library and to 
+                                     try and integrate it within the Django framework.
+                                  </p>
+                                  <p>
+                                      Key features:
+                                      <ul>
+                                          <li>Users can search and compare guitar prices from several major guitar retailers in the Tokyo region.</li>
+                                          <li>Simple filtering options (price, brand)</li>
+                                          <li>Responsive design</li>
+                                      </ul>
+                                  </p>
                                   <div class="tech-items">
                                     <div class="tech-item">Django</div>
                                     <div class="tech-item">Python</div>
                                     <div class="tech-item">HTML/CSS/Javascript</div>
                                   </div>
                                   <div class="modal-links">
-                                    <a href=""><i class="fas fa-link fa-3x"></i></a>
-                                    <a href=""><i class="fab fa-github fa-3x"></i></a>
+                                    <a href="https://protected-bayou-15082.herokuapp.com/entries/" target="_blank"><i class="fas fa-link fa-3x"></i></a>
+                                    <a href="https://github.com/thesaladbowl/guitarcompare" target="_blank"><i class="fab fa-github fa-3x"></i></a>
                                  </div>
                                   </div>
                                   <div class="content-2">
@@ -141,9 +158,25 @@
                         <div class="flex-wrapper">
                             <div class="content-1">
                             <h1>TAGA Online</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia deleniti ratione aperiam! Officia voluptatem id quae omnis. Voluptatem, distinctio.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facere praesentium! Sequi odio dolores consectetur non alias, harum magnam saepe quos aspernatur vitae maiores totam rerum voluptates exercitationem odit ea! Commodi consequuntur a nostrum alias, qui at, rem explicabo architecto exercitationem tenetur rerum sit optio illum quisquam dolor ut debitis.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis veniam tempore ipsam ex libero repudiandae aut molestias adipisci ea nam?</p>
+                            <p>
+                                A guitar school in central Tokyo with around 300 students was having difficulty with their scheduling system. They had previously relied on Google Calendar, but found that the school had grown to such a number that they had trouble finding an efficient way to display teachers and students' schedules. Additionally, there was no system in place to handle rescheduling; as such, the school was constantly inundated with rescheduling requests, wasting the time of the administrative staff.
+                            </p>
+                            <p>
+                                With these problems in mind, I set out to create TAGAOnline, a system for the school that could be used by admin staff, teachers and students. Now, the administrative staff can navigate lessons much easier, teachers can view their own private schedules and students are able to reschedule their lessons with any teacher and at any time they wish. 
+                            </p>
+                            <p>
+                                The site is currently in use by <a href="https://theamericanguitaracademy.com" target="_blank">The American Guitar Academy</a> in Roppongi, Tokyo.
+                            </p>
+                            <p>
+                                Key features:
+                                <ul>
+                                    <li>Rescheduling system for students. Students are able to reschedule their own lessons with any teacher. The system ensures that their chosen lesson does not clash with another students' lessons, as well as several other checks.</li>
+                                    <li>Teachers can view their own private schedules, updated to reflect any changes.</li>
+                                    <li>Admin staff can perform standard CRUD operations for lessons using a clean and intuitive interface.</li>
+                                    <li>Search function to find a student and their corresponding lessons. The system also informs the staff if the student has missed their last 3 lessons. </li>
+                                    <li>Automatic emails for both students and admin staff when a student makes a reschedule.</li>
+                                </ul>
+                            </p>
                             <div class="tech-items">
                                 <div class="tech-item">Django REST Framework</div>
                                 <div class="tech-item">VueJS</div>
@@ -171,7 +204,7 @@
                             <button class="btn-3">info</button>
                             <div class="link-container">
                                 <a href=""><i class="fas fa-link fa-2x"></i></a>
-                                <a href=""><i class="fab fa-github fa-2x"></i></a>
+                                <a href="https://github.com/thesaladbowl/kanjiquiz" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                              </div>
                         </div>
                         <div id="modal-3" class="modal">
@@ -179,16 +212,31 @@
                            <div class="flex-wrapper">
                             <div class="content-1">
                               <h1>KanjiQuiz</h1>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ut.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia officia quibusdam sit odio obcaecati ex assumenda inventore eius sapiente facilis?</p>
-                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, unde!</p>
+                              <p>
+                                KanjiQuiz is a simple e-learning site for teachers to administer Kanji (Japanese character) quizes to students. I created this site to practice using a low level framework (Flask) and to implement my own authentication. 
+                              </p>
+                              <p>
+                                Some features that make the site stand out include several statistics for teachers to assess their students. In particular, KanjiQuiz is able to calculate which kanji are easiest and hardest for students and display this in the teacher dashboard. The site also features a simple comment system on each quiz, so that students can ask questions and teachers can respond. 
+                              </p>
+                              <p>
+                                Even with the use of several libraries it was a challenging site to create, but I learned a lot from it.
+                              </p>
+                              <p>
+                                  Key features:
+                                  <ul>
+                                      <li>JWT Authentication.</li>
+                                      <li>Detailed statistics for teachers, including % of sentences correct/incorrect and also which characters are easiest and most difficult for students.</li>
+                                      <li>Simple “comment” system for students to ask questions on a particular quiz.</li>
+                                      <li>Admin system to create new classes，new students and new teachers. </li>
+                                  </ul>
+                              </p>
                               <div class="tech-items">
                                 <div class="tech-item">Flask</div>
                                 <div class="tech-item">VueJS</div>
                               </div>
                               <div class="modal-links">
-                                <a href=""><i class="fas fa-link fa-3x"></i></a>
-                                <a href=""><i class="fab fa-github fa-3x"></i></a>
+                                <a href="" target="_blank"><i class="fas fa-link fa-3x"></i></a>
+                                <a href="https://github.com/thesaladbowl/kanjiquiz" target="_blank"><i class="fab fa-github fa-3x"></i></a>
                              </div>
                               </div>
                               <div class="content-2">
