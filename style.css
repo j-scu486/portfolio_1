@@ -847,8 +847,28 @@ a {
         font-size: 3rem;
     }
 
+    #projects .modal .content-2 img  {
+        height: auto;
+    }
+
     #what .about-me-image .img-sm {
         display: block;
     }
+
+    #what p {
+        text-align: justify;
+    }
     
+    .modal .tech-items {
+        flex-wrap: wrap;
+    }
+    .modal .tech-items .tech-item{
+        margin-top: 10px;
+    }
+    .modal .content-1 p {
+        text-align: justify;
+    }
+    .modal .content-2 img{
+        height: 100px;
+    }
 }
