@@ -41,13 +41,15 @@ a {
 }
 
 /* Navbar */
+
 #navbar .navbar-container {
     position: fixed;
-    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     top: 30%;
     left: 0;
-    transform: translateX(-100px);
+    background: var(--background-color-1);
+    transform: translateX(-1000px);
     transition: transform 200ms;
     z-index: 10;
 }
@@ -237,7 +239,10 @@ a {
 }
 
 #what .about-me-image .img-lg {
-
+    height: 400px;
+    width: auto;
+    align-self: flex-end;
+    margin-left: 100px;
 }
 
 #what .about-me-image .img-sm {
@@ -639,9 +644,21 @@ a {
 /* Responsiveness */
 
 @media (max-width: 800px){
+    /* Navbar */
     #navbar .navbar-container {
-        display: none;
+        top: 0;
+        width: 100%;
     }
+
+    #navbar .navbar-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    /* Showcase */
     #showcase .showcase-container {
         display: flex;
         flex-wrap: wrap;
@@ -763,7 +780,7 @@ a {
 
     
     #contact .form-container {
-        width: 100%;
+        width: 90%;
         padding: 1rem;  
         background: var(--primary-color-1);
         border-radius: 10px;

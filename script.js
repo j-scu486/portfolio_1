@@ -65,7 +65,7 @@ window.addEventListener("scroll", function(){
   if (window.scrollY > (aboutMeSection.offsetHeight)) {
     navBar.style.transform = "translateX(0)";
   } else {
-    navBar.style.transform = "translateX(-100px)";
+    navBar.style.transform = "translateX(-1000px)";
   }
 })
 
