@@ -646,10 +646,11 @@ a {
 @media (max-width: 800px){
     /* Navbar */
     #navbar .navbar-container {
-        top: 0;
-        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 90%;
     }
-
     #navbar .navbar-links {
         display: flex;
         flex-direction: row;
@@ -820,6 +821,12 @@ a {
 }
 
 @media (max-width: 500px){
+    #navbar .navbar-container {
+        top: 0;
+        bottom: 90%;
+        width: 100%;
+    }
+
     #showcase .header-span {
         font-size: 7rem;
         color: var(--primary-color-1);
