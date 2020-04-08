@@ -579,6 +579,7 @@ a {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
+    border: none;
     background-color: var(--submit-color);
     color: #fff;
     transition: box-shadow 200ms;
@@ -587,6 +588,10 @@ a {
     cursor: pointer;
     font-family: inherit;
     letter-spacing: 1px;
+}
+
+#contact .form input[type=submit]:hover {
+    box-shadow: 1px 1px 10px var(--primary-color-1);
 }
 
 #contact .citrus-1 {
@@ -773,9 +778,15 @@ a {
     }
     
     #projects .grid-container .item img{
-        height: 200px;
+        height: auto;
         width: 100%;
     }
+
+    #projects .modal .content-2 img  {
+        height: auto;
+        width: auto;
+    }
+
     
     /* Contact */
 
@@ -846,12 +857,6 @@ a {
     #showcase .web-dev-header {
         margin: 0;
         font-size: 3rem;
-    }
-
-    #projects .grid-container {}
-
-    #projects .modal .content-2 img  {
-        height: auto;
     }
 
     #what .about-me-image .img-sm {
