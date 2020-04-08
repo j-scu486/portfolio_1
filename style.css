@@ -827,13 +827,17 @@ a {
         width: 100%;
     }
 
+    #navbar .navbar-links img {
+        display: none;
+    }
+
     #showcase .header-span {
-        font-size: 7rem;
+        font-size: 6rem;
         color: var(--primary-color-1);
     }
     
     #showcase .showcase-info h1 {
-        font-size: 6rem;
+        font-size: 5rem;
         line-height: 1;
         text-align: center;
         z-index: 10;
