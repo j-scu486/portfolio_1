@@ -78,8 +78,6 @@ window.addEventListener("scroll", function(){
 var showcaseContainer = document.querySelector(".showcase-container");
 var bodySelector = document.querySelector("body")
 
-document.onreadystatechange = () => {
-  if (document.readyState === 'complete') {
-      bodySelector.style.visibility = "visible"
-  }
-};
+window.onload = function(){
+  bodySelector.style.visibility = "visible"
+}
