@@ -71,5 +71,15 @@ window.addEventListener("scroll", function(){
 
 // Snowball hover effect
 
-var snowball1 = document.querySelector(".snowball-1");
+// var snowball1 = document.querySelector(".snowball-1");
 
+// Loading overlay
+
+var showcaseContainer = document.querySelector(".showcase-container");
+var bodySelector = document.querySelector("body")
+
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+      bodySelector.style.visibility = "visible"
+  }
+};
