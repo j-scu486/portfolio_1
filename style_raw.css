@@ -410,6 +410,11 @@ a {
     box-shadow: 1.5px 1px 6px var(--primary-color-1);
   }
 
+   h3 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color-1);
+  }
+
 /* Modal Overlay */
 
 .modal {
@@ -431,10 +436,10 @@ a {
     color: var(--primary-color-2);
   }
 
-  .modal h1 {
+  .modal h3 {
+      font-size: 1.5rem;
       text-decoration: underline;
       text-decoration-color: var(--primary-color-1);
-
   }
 
   .modal p {
