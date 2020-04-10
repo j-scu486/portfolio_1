@@ -1,8 +1,3 @@
-
-window.onload = function(){
-  bodySelector.style.visibility = "visible"
-}
-
 // Modal 
 
 var button = document.querySelector("#btn");
@@ -40,7 +35,7 @@ gridContainer.addEventListener("click", e => {
 document.addEventListener("DOMContentLoaded", function() {
   window.onload = function() {
     // Wait until page is loaded before animations
-    
+
     var bodySelector = document.querySelector("body")
     bodySelector.style.visibility = "visible"
 
@@ -64,19 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
       .from(".citrus-2", {duration: 2, y: -1000, ease: "bounce"}, 0.2)
       .from(".citrus-3", {duration: 2, y: -1000, ease: "bounce"}, 0.25)
 
-    window.addEventListener("scroll", function(){
-      if (window.scrollY > (contactSection.offsetTop)) {
-        tl3.play()
+      window.addEventListener("scroll", function(){
+        if (window.scrollY > (contactSection.offsetTop)) {
+          tl3.play()
+      }
+    })
   }
 })
-
-
-  }
-
-})
-
-
-
 
 // Navbar display on scroll
 var navBar = document.querySelector(".navbar-container");
