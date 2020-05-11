@@ -278,8 +278,7 @@ a {
 
 #projects .container {
     max-width: 1200px;
-    margin: 0 auto;
-    height: 100vh;
+    margin:  0 auto;
     padding-top: 10px;
 }
 
@@ -316,8 +315,6 @@ a {
 
 #projects .item {
     position: relative;
-    margin: 0 1rem;
-    width: 350px;
     overflow: hidden;
     transition: transform 500ms;
     border-radius: 10px;
@@ -477,11 +474,11 @@ a {
   
   .overlay {
     background: rgba(0, 0, 0, 0.7);
-    height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     left:0;
+    bottom: 0;
+    right: 0;
     z-index: 400;
   }
   .modal-close {
@@ -545,6 +542,7 @@ a {
 
 #contact {
     position: relative;
+    margin-top: 100px;
     margin-bottom: 50px;
     overflow: hidden;
 }
@@ -874,10 +872,6 @@ a {
         width: 100%;
     }
 
-    /* #navbar .navbar-links img {
-        display: none;
-    } */
-
     #showcase .header-span {
         font-size: 6rem;
         color: var(--primary-color-1);
@@ -907,7 +901,7 @@ a {
         height: 100px;
         width: auto;
     }
-    
+
     .modal .tech-items {
         flex-wrap: wrap;
     }
