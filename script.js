@@ -27,7 +27,6 @@ close.forEach(item => {
 gridContainer.addEventListener("click", e => {
     var num = parseInt(e.target.className.substring(4))
     var modal = "modal-" + num
-    console.log(e)
     openModal(modal);
 });
 
