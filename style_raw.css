@@ -814,8 +814,8 @@ a {
     }
     
     #projects .grid-container .item img{
-        height: auto;
-        width: 100%;
+        height: 200px;
+        width: auto;
     }
 
     #projects .modal .content-2 img  {
