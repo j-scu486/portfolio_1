@@ -420,6 +420,8 @@ a {
     overflow: scroll;
     top: 0;
     left: 5%;
+    bottom: 0;
+    right: 0;
     height: 90vh;
     width: 90%;
     background: var(--background-color-1);
@@ -900,6 +902,15 @@ a {
     #projects .modal .content-2 img  {
         height: 100px;
         width: auto;
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
     }
 
     .modal .tech-items {
