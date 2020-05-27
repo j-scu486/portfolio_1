@@ -83,3 +83,10 @@ window.addEventListener("scroll", function(){
 
 // var snowball1 = document.querySelector(".snowball-1");
 
+const formContainer = document.getElementById('form');
+const submitBtn = document.querySelector('.form-submit');
+const thankyouHeader = document.querySelector('thank-you');
+
+formContainer.addEventListener('submit', function(){
+  submitBtn.style.backgroundColor = 'grey';
+})

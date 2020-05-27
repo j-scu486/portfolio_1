@@ -12,6 +12,10 @@
     --submit-color: rgb(231, 1, 1);
 }
 
+.disabled {
+    background-color: gray;
+}
+
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {
@@ -652,6 +656,25 @@ a {
 
 }
 
+#contact .thank-you {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    animation: scale-in 1s ease-out;
+}
+
+@keyframes scale-in {
+    0% {
+        transform: scale(1);
+    } 
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Footer */
 
 #footer {
@@ -927,3 +950,5 @@ a {
         height: 100px;
     }
 }
+
+
