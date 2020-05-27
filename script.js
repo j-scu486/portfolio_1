@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var bodySelector = document.querySelector("body")
     bodySelector.style.visibility = "visible"
 
-    var contactSection = document.querySelector("#contact");
+    var projectsSection = document.querySelector('#projects')
     var tl = gsap.timeline()
     var tl2 = new TimelineMax({repeat:-1, yoyo:true});
     var tl3 = gsap.timeline({paused: true})
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .from(".citrus-3", {duration: 2, y: -1000, ease: "bounce"}, 0.25)
 
       window.addEventListener("scroll", function(){
-        if (window.scrollY > (contactSection.offsetTop)) {
+        if (window.scrollY > projectsSection.offsetTop + projectsSection.offsetHeight) {
           tl3.play()
       }
     })

@@ -306,7 +306,7 @@ a {
 #projects .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     margin-top: 100px;
     overflow: hidden;
 }
@@ -550,7 +550,7 @@ a {
 #contact {
     position: relative;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 
