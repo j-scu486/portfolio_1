@@ -527,6 +527,7 @@ a {
   .tech-items {
     display: flex;
     justify-content: flex-start;
+    margin-top: 50px;
   }
   
   .tech-items p {
