@@ -846,6 +846,7 @@ a {
     /* Projects */
     #projects .container {
         margin-bottom: 300px;
+        height: auto;
     }
     
     #projects h2 {
@@ -965,10 +966,6 @@ a {
     #projects .modal .content-2 img  {
         height: 100px;
         width: auto;
-    }
-
-    #projects .container {
-        height: auto;
     }
 
     #tech {
