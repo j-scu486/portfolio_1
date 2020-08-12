@@ -971,6 +971,10 @@ a {
         height: auto;
     }
 
+    #tech {
+        display: none;
+    }
+
     .modal {
         top: 0;
         left: 0;
