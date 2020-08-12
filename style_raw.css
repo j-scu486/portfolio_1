@@ -232,7 +232,7 @@ a {
     display: flex;
     max-width: 1200px;
     margin: 0 auto ;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
 }
 
@@ -274,6 +274,42 @@ a {
     display: none;
 }
 
+/* Tech */
+
+#tech .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+#tech h2 {
+    font-size: 3rem;
+    position: relative;
+}
+
+#tech h2:after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    bottom: -15px; 
+    left: 0;
+    margin: 0 auto;
+    width: 100px;
+    background: var(--primary-color-1);
+}
+
+#tech .tech-wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#tech .tech-item img{
+    height: 120px;
+    margin: 50px 50px;
+}
+
 /* Projects */
 
 #projects {
@@ -284,6 +320,7 @@ a {
     max-width: 1200px;
     margin:  0 auto;
     padding-top: 10px;
+    height: 80vh;
 }
 
 #projects h2 {
@@ -706,6 +743,7 @@ a {
 #footer a:hover {
     color: var(--primary-color-1);
 }
+
 
 /* Responsiveness */
 
