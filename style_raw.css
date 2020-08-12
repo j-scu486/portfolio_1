@@ -967,6 +967,10 @@ a {
         width: auto;
     }
 
+    #projects .container {
+        height: auto;
+    }
+
     .modal {
         top: 0;
         left: 0;
