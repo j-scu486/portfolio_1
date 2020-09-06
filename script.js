@@ -11,12 +11,14 @@ function openModal(modal){
     projects.scrollIntoView()
     var modalSelector = document.querySelector(`#${modal}`);
     modalSelector.style.display = "block";
+    gridContainer.style.opacity = "0";
     overlay.classList.add("overlay");
     closeModalSelector = modalSelector;
 };
 
 function closeModal(){
     closeModalSelector.style.display = "none"
+    gridContainer.style.opacity = "1";
     overlay.classList.remove("overlay")
 }
 
